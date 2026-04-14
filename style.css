@@ -33,7 +33,9 @@ a:hover { text-decoration: underline; }
 img { max-width: 100%; display: block; }
 
 /* ── Language hidden ──────────────────────────────────────────────────────── */
-[lang="en"], [lang="es"] { display: none; }
+/* Usar "body [lang]" para no ocultar <html lang="en"> que causaría página en blanco */
+body [lang="en"],
+body [lang="es"] { display: none; }
 body.lang-en [lang="en"] { display: revert; }
 body.lang-es [lang="es"] { display: revert; }
 
