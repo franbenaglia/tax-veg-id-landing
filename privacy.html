@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — PlantID</title>
+  <meta name="description" content="PlantID privacy policy. Learn how we collect, use and protect your data." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body class="lang-en">
+
+<!-- ── Nav ────────────────────────────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>🌿</span> PlantID</a>
+    <ul class="nav-links">
+      <li><a href="index.html" lang="en">Home</a><a href="index.html" lang="es">Inicio</a></li>
+      <li><a href="delete-account.html" lang="en">Delete Account</a><a href="delete-account.html" lang="es">Borrar Cuenta</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn"       onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────────────────────────────── -->
+<div class="legal-hero">
+  <h1 lang="en">Privacy Policy</h1>
+  <h1 lang="es">Política de Privacidad</h1>
+  <p lang="en">Last updated: April 2025</p>
+  <p lang="es">Última actualización: Abril 2025</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════
+     ENGLISH VERSION
+═══════════════════════════════════════════════════════════════════════════ -->
+<div class="legal-body" lang="en">
+
+  <div class="info-box">
+    This Privacy Policy describes how <strong>PlantID</strong> ("we", "our", or "us") collects, uses, and protects information when you use our mobile application. By using PlantID, you agree to the practices described in this policy.
+  </div>
+
+  <h2>1. Information We Collect</h2>
+
+  <p><strong>1.1 Account information</strong></p>
+  <ul>
+    <li><strong>Email address</strong> — required to create an account and send verification codes (OTP).</li>
+    <li><strong>Password</strong> — stored as a one-way cryptographic hash (bcrypt). We cannot recover your original password.</li>
+    <li><strong>Google account</strong> — if you sign in with Google, we receive your email address and Google ID from Google's OAuth service. We do not receive your Google password.</li>
+  </ul>
+
+  <p><strong>1.2 Photos and images</strong></p>
+  <p>When you submit a photo for identification:</p>
+  <ul>
+    <li>The image is sent to our server for AI processing.</li>
+    <li><strong>Images are never stored on our servers.</strong> They are processed in memory and immediately discarded after the result is generated.</li>
+    <li>A cryptographic hash of the image is stored in cache to avoid reprocessing identical photos. This hash cannot be used to reconstruct the image.</li>
+  </ul>
+
+  <p><strong>1.3 Location data (GPS)</strong></p>
+  <ul>
+    <li>Your GPS coordinates (latitude and longitude) are sent with each identification request to select the appropriate regional AI model.</li>
+    <li><strong>Coordinates are not stored</strong> in our database after the request is processed.</li>
+    <li>We do not track your movement or build location history.</li>
+  </ul>
+
+  <p><strong>1.4 Usage data</strong></p>
+  <ul>
+    <li>Number of identifications used in the current month (for credit tracking).</li>
+    <li>Subscription plan status (free or premium).</li>
+    <li>Account creation date and email verification status.</li>
+  </ul>
+
+  <p><strong>1.5 Anonymous usage</strong></p>
+  <p>If you use PlantID without creating an account, we generate a temporary anonymous session ID stored only on your device. We count identifications against this session ID (up to 5 free identifications). No personal information is collected from anonymous users.</p>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>To provide and improve the plant and fungi identification service.</li>
+    <li>To authenticate your identity and manage your account.</li>
+    <li>To send account verification codes and security notifications via email.</li>
+    <li>To enforce usage limits (free vs. premium plan).</li>
+    <li>To process subscription payments through Google Play Billing (handled by Google and RevenueCat).</li>
+    <li>To detect and prevent abuse of the service.</li>
+  </ul>
+  <p>We do <strong>not</strong> use your data for advertising, sell it to third parties, or use it for purposes unrelated to operating the PlantID service.</p>
+
+  <h2>3. Third-Party Services</h2>
+
+  <p><strong>3.1 Google Sign-In</strong><br>
+  We use Google OAuth for optional sign-in. When you choose "Sign in with Google", Google shares your email and a unique identifier with us. Google's privacy policy applies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+  <p><strong>3.2 RevenueCat (Subscription Management)</strong><br>
+  We use RevenueCat to manage in-app subscriptions via Google Play Billing. RevenueCat receives your anonymous app user ID and subscription status. RevenueCat does not receive your email or photos. RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+
+  <p><strong>3.3 Google Play Billing</strong><br>
+  Payment processing is handled entirely by Google Play. We never receive or store your payment card details. Google's payment policy applies.</p>
+
+  <p><strong>3.4 Email Delivery (Resend / SMTP)</strong><br>
+  We use a third-party email service to deliver verification codes. Only your email address is shared with this provider, solely for the purpose of delivering the requested message.</p>
+
+  <p><strong>3.5 Cloud Hosting (AWS)</strong><br>
+  Our backend runs on Amazon Web Services (AWS) in the United States. Data in transit is encrypted with TLS. Data at rest is encrypted with AES-256. AWS's privacy policy: <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener">aws.amazon.com/privacy</a></p>
+
+  <h2>4. Data Retention</h2>
+  <ul>
+    <li><strong>Account data</strong> (email, password hash, credit usage): retained until you delete your account.</li>
+    <li><strong>Photos</strong>: never stored — processed in real time and discarded.</li>
+    <li><strong>GPS coordinates</strong>: not stored after each request.</li>
+    <li><strong>Image cache hashes</strong>: retained for up to 30 days to improve performance, then automatically deleted.</li>
+    <li><strong>Verification codes (OTP)</strong>: automatically expire after 10 minutes and are marked as used after verification.</li>
+    <li><strong>Anonymous session data</strong>: retained for up to 90 days of inactivity, then deleted.</li>
+  </ul>
+
+  <h2>5. Your Rights</h2>
+  <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+  <ul>
+    <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+    <li><strong>Correction</strong> — request correction of inaccurate data.</li>
+    <li><strong>Deletion</strong> — request deletion of your account and all associated data. See our <a href="delete-account.html">Account Deletion page</a>.</li>
+    <li><strong>Portability</strong> — request your data in a machine-readable format.</li>
+    <li><strong>Objection</strong> — object to certain processing of your data.</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at <a href="mailto:privacy@plantid.app">privacy@plantid.app</a></p>
+
+  <h2>6. Security</h2>
+  <ul>
+    <li>Passwords are hashed with bcrypt (industry standard, not reversible).</li>
+    <li>All communication between the app and our servers uses HTTPS/TLS encryption.</li>
+    <li>Sensitive configuration values (API keys, JWT secrets) are stored in encrypted environment variables, not in the source code.</li>
+    <li>We regularly review our security practices.</li>
+  </ul>
+
+  <h2>7. Children's Privacy</h2>
+  <p>PlantID is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately at <a href="mailto:privacy@plantid.app">privacy@plantid.app</a> and we will delete that information.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we make significant changes, we will notify registered users via email and update the "Last updated" date at the top of this page. Continued use of PlantID after changes are posted constitutes your acceptance of the updated policy.</p>
+
+  <h2>9. Contact</h2>
+  <p>If you have questions, concerns, or requests about this Privacy Policy or your personal data, please contact us:</p>
+  <a href="mailto:privacy@plantid.app" class="email-link">
+    📧 privacy@plantid.app
+  </a>
+  <p>We aim to respond to all privacy inquiries within 30 days.</p>
+
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════
+     SPANISH VERSION
+═══════════════════════════════════════════════════════════════════════════ -->
+<div class="legal-body" lang="es">
+
+  <div class="info-box">
+    Esta Política de Privacidad describe cómo <strong>PlantID</strong> ("nosotros" o "la aplicación") recopila, usa y protege la información cuando usás nuestra aplicación móvil. Al usar PlantID, aceptás las prácticas descritas en esta política.
+  </div>
+
+  <h2>1. Información que recopilamos</h2>
+
+  <p><strong>1.1 Información de cuenta</strong></p>
+  <ul>
+    <li><strong>Dirección de email</strong> — necesaria para crear una cuenta y enviar códigos de verificación (OTP).</li>
+    <li><strong>Contraseña</strong> — almacenada como hash criptográfico unidireccional (bcrypt). No podemos recuperar tu contraseña original.</li>
+    <li><strong>Cuenta de Google</strong> — si iniciás sesión con Google, recibimos tu email e ID de Google a través del servicio OAuth de Google. No recibimos tu contraseña de Google.</li>
+  </ul>
+
+  <p><strong>1.2 Fotos e imágenes</strong></p>
+  <p>Cuando enviás una foto para identificación:</p>
+  <ul>
+    <li>La imagen se envía a nuestro servidor para su procesamiento con IA.</li>
+    <li><strong>Las imágenes nunca se almacenan en nuestros servidores.</strong> Se procesan en memoria y se descartan inmediatamente después de generar el resultado.</li>
+    <li>Se almacena un hash criptográfico de la imagen en caché para evitar reprocesar fotos idénticas. Este hash no puede usarse para reconstruir la imagen.</li>
+  </ul>
+
+  <p><strong>1.3 Datos de ubicación (GPS)</strong></p>
+  <ul>
+    <li>Tus coordenadas GPS (latitud y longitud) se envían con cada solicitud de identificación para seleccionar el modelo de IA regional adecuado.</li>
+    <li><strong>Las coordenadas no se almacenan</strong> en nuestra base de datos después de procesar la solicitud.</li>
+    <li>No rastreamos tu movimiento ni construimos historial de ubicación.</li>
+  </ul>
+
+  <p><strong>1.4 Datos de uso</strong></p>
+  <ul>
+    <li>Número de identificaciones usadas en el mes actual (para control de créditos).</li>
+    <li>Estado del plan de suscripción (gratuito o premium).</li>
+    <li>Fecha de creación de cuenta y estado de verificación de email.</li>
+  </ul>
+
+  <p><strong>1.5 Uso anónimo</strong></p>
+  <p>Si usás PlantID sin crear una cuenta, generamos un ID de sesión temporal almacenado solo en tu dispositivo. Contamos las identificaciones contra este ID de sesión (hasta 5 identificaciones gratuitas). No se recopila información personal de usuarios anónimos.</p>
+
+  <h2>2. Cómo usamos tu información</h2>
+  <ul>
+    <li>Para proporcionar y mejorar el servicio de identificación de plantas y hongos.</li>
+    <li>Para autenticar tu identidad y gestionar tu cuenta.</li>
+    <li>Para enviar códigos de verificación de cuenta y notificaciones de seguridad por email.</li>
+    <li>Para aplicar los límites de uso (plan gratuito vs. premium).</li>
+    <li>Para procesar pagos de suscripción a través de Google Play Billing (gestionado por Google y RevenueCat).</li>
+    <li>Para detectar y prevenir el abuso del servicio.</li>
+  </ul>
+  <p><strong>No</strong> usamos tus datos para publicidad, no los vendemos a terceros, ni los usamos para fines no relacionados con el funcionamiento del servicio PlantID.</p>
+
+  <h2>3. Servicios de terceros</h2>
+
+  <p><strong>3.1 Google Sign-In</strong><br>
+  Usamos Google OAuth para el inicio de sesión opcional. Cuando elegís "Continuar con Google", Google comparte tu email y un identificador único con nosotros. Se aplica la política de privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+  <p><strong>3.2 RevenueCat (Gestión de suscripciones)</strong><br>
+  Usamos RevenueCat para gestionar las suscripciones in-app a través de Google Play Billing. RevenueCat recibe tu ID de usuario anónimo de la app y el estado de la suscripción. RevenueCat no recibe tu email ni tus fotos. Política de privacidad de RevenueCat: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+
+  <p><strong>3.3 Google Play Billing</strong><br>
+  El procesamiento de pagos lo gestiona completamente Google Play. Nunca recibimos ni almacenamos los datos de tu tarjeta de pago. Se aplica la política de pagos de Google.</p>
+
+  <p><strong>3.4 Envío de emails (Resend / SMTP)</strong><br>
+  Usamos un servicio de email de terceros para entregar los códigos de verificación. Solo tu dirección de email se comparte con este proveedor, únicamente para entregar el mensaje solicitado.</p>
+
+  <p><strong>3.5 Alojamiento en la nube (AWS)</strong><br>
+  Nuestro backend funciona en Amazon Web Services (AWS) en los Estados Unidos. Los datos en tránsito están encriptados con TLS. Los datos en reposo están encriptados con AES-256. Política de privacidad de AWS: <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener">aws.amazon.com/privacy</a></p>
+
+  <h2>4. Retención de datos</h2>
+  <ul>
+    <li><strong>Datos de cuenta</strong> (email, hash de contraseña, uso de créditos): se conservan hasta que eliminás tu cuenta.</li>
+    <li><strong>Fotos</strong>: nunca se almacenan — se procesan en tiempo real y se descartan.</li>
+    <li><strong>Coordenadas GPS</strong>: no se almacenan después de cada solicitud.</li>
+    <li><strong>Hashes de caché de imágenes</strong>: se conservan hasta 30 días para mejorar el rendimiento, luego se eliminan automáticamente.</li>
+    <li><strong>Códigos de verificación (OTP)</strong>: expiran automáticamente después de 10 minutos y se marcan como usados tras la verificación.</li>
+    <li><strong>Datos de sesión anónima</strong>: se conservan hasta 90 días de inactividad, luego se eliminan.</li>
+  </ul>
+
+  <h2>5. Tus derechos</h2>
+  <p>Dependiendo de tu ubicación, podés tener los siguientes derechos sobre tus datos personales:</p>
+  <ul>
+    <li><strong>Acceso</strong> — solicitar una copia de los datos personales que tenemos sobre vos.</li>
+    <li><strong>Corrección</strong> — solicitar la corrección de datos inexactos.</li>
+    <li><strong>Eliminación</strong> — solicitar la eliminación de tu cuenta y todos los datos asociados. Ver nuestra <a href="delete-account.html">página de Eliminación de Cuenta</a>.</li>
+    <li><strong>Portabilidad</strong> — solicitar tus datos en un formato legible por máquina.</li>
+    <li><strong>Oposición</strong> — oponerte a ciertos procesamientos de tus datos.</li>
+  </ul>
+  <p>Para ejercer cualquiera de estos derechos, contactanos en <a href="mailto:privacy@plantid.app">privacy@plantid.app</a></p>
+
+  <h2>6. Seguridad</h2>
+  <ul>
+    <li>Las contraseñas se hashean con bcrypt (estándar de la industria, no reversible).</li>
+    <li>Toda la comunicación entre la app y nuestros servidores usa cifrado HTTPS/TLS.</li>
+    <li>Los valores de configuración sensibles (claves API, secretos JWT) se almacenan en variables de entorno cifradas, no en el código fuente.</li>
+    <li>Revisamos periódicamente nuestras prácticas de seguridad.</li>
+  </ul>
+
+  <h2>7. Privacidad de menores</h2>
+  <p>PlantID no está dirigida a niños menores de 13 años. No recopilamos a sabiendas información personal de niños menores de 13 años. Si creés que un niño nos proporcionó información personal, contactanos inmediatamente en <a href="mailto:privacy@plantid.app">privacy@plantid.app</a> y eliminaremos esa información.</p>
+
+  <h2>8. Cambios en esta política</h2>
+  <p>Podemos actualizar esta Política de Privacidad periódicamente. Cuando hagamos cambios significativos, notificaremos a los usuarios registrados por email y actualizaremos la fecha de "Última actualización" al inicio de esta página. El uso continuado de PlantID después de publicar los cambios constituye tu aceptación de la política actualizada.</p>
+
+  <h2>9. Contacto</h2>
+  <p>Si tenés preguntas, inquietudes o solicitudes sobre esta Política de Privacidad o tus datos personales, contactanos:</p>
+  <a href="mailto:privacy@plantid.app" class="email-link">
+    📧 privacy@plantid.app
+  </a>
+  <p>Nos comprometemos a responder todas las consultas de privacidad dentro de los 30 días.</p>
+
+</div>
+
+<!-- ── Footer ──────────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <ul class="footer-links">
+    <li><a href="index.html">PlantID</a></li>
+    <li><a href="privacy.html" lang="en">Privacy Policy</a><a href="privacy.html" lang="es">Política de Privacidad</a></li>
+    <li><a href="delete-account.html" lang="en">Delete Account</a><a href="delete-account.html" lang="es">Borrar Cuenta</a></li>
+  </ul>
+  <p lang="en">&copy; 2025 PlantID. For research and educational use only.</p>
+  <p lang="es">&copy; 2025 PlantID. Solo para uso educativo e investigación.</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.documentElement.lang = lang;
+    localStorage.setItem('plantid-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.trim().toLowerCase() === lang);
+    });
+  }
+  const saved = localStorage.getItem('plantid-lang') || 'en';
+  setLang(saved);
+</script>
+</body>
+</html>
